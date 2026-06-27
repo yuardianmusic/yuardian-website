@@ -77,14 +77,14 @@ nav{
 .logo-marquee{
     background:#111;
     overflow:hidden;
-    padding:14px 0;
+    padding:20px 0;
     white-space:nowrap;
 }
 
 .marquee{
     display:flex;
     width:max-content;
-    animation:marquee 30s linear infinite;
+    animation:marquee 15s linear infinite;
 }
 
 .marquee-content{
@@ -95,32 +95,32 @@ nav{
 .marquee-item{
     display:flex;
     align-items:center;
-    margin:0 24px;
+    margin:0 20px;
 }
 
 .marquee-item img{
-    width:26px;
-    height:26px;
+    width:25px;
+    height:25px;
     object-fit:contain;
     display:block;
 }
 
 .marquee-item span{
-    margin-left:12px;
-    font-size:18px;
+    margin-left:10px;
+    font-size:25px;
     font-weight:700;
     color:#fff;
 }
 
 .marquee-content span{
-    font-size:17px;
+    font-size:25px;
     color:#ddd;
-    margin:0 22px;
+    margin:0 20px;
 }
 
 .divider{
     color:#c9a86a;
-    font-size:18px;
+    font-size:25px;
 }
 
 /* Pause saat hover */
