@@ -101,46 +101,46 @@ height:auto;
 }
 
 .logo-marquee{
-    background:#111;
-    padding:18px 0;
-    overflow:hidden;
-}
-
-.marquee{
     width:100%;
     overflow:hidden;
+    background:#111;
+    padding:18px 0;
 }
 
-.marquee-content{
+.marquee-track{
     display:flex;
     width:max-content;
-    animation:marquee 20s linear infinite;
+    animation:scroll 18s linear infinite;
 }
 
-.marquee-content span{
+.marquee-item{
     display:flex;
     align-items:center;
-    gap:15px;
-    margin-right:80px;
-    color:white;
-    font-size:18px;
+    white-space:nowrap;
+    margin-right:120px;
+}
+
+.marquee-item img{
+    width:32px;
+    height:32px;
+    object-fit:contain;
+    margin-right:14px;
+}
+
+.marquee-item span{
+    color:#fff;
+    font-size:20px;
     font-weight:600;
+    letter-spacing:.5px;
 }
 
-.marquee-content img{
-    width:40px;
-}
-
-@keyframes marquee{
+@keyframes scroll{
     from{
         transform:translateX(0);
     }
     to{
         transform:translateX(-50%);
     }
-}    
-section{
-padding:10px 20px;
 }
 
 .accordion{
