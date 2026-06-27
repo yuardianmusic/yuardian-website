@@ -69,16 +69,6 @@ font-size:38px;
 margin-bottom:10px;
 }
 
-.playlist{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:20px;
-}
-
-audio{
-width:100%;
-}
-
 #kontak p{
 margin-bottom:10px;
 }
@@ -110,6 +100,45 @@ width:100%;
 height:auto;
 }
 
+.logo-marquee{
+    background:#111;
+    padding:18px 0;
+    overflow:hidden;
+}
+
+.marquee{
+    width:100%;
+    overflow:hidden;
+}
+
+.marquee-content{
+    display:flex;
+    width:max-content;
+    animation:marquee 20s linear infinite;
+}
+
+.marquee-content span{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin-right:80px;
+    color:white;
+    font-size:18px;
+    font-weight:600;
+}
+
+.marquee-content img{
+    width:40px;
+}
+
+@keyframes marquee{
+    from{
+        transform:translateX(0);
+    }
+    to{
+        transform:translateX(-50%);
+    }
+}    
 section{
 padding:10px 20px;
 }
