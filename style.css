@@ -143,33 +143,21 @@ height:auto;
     }
 }
 
-.accordion{
+@media(max-width:768px){
 
-width:100%;
+.marquee-item img{
 
-background:#161616;
+    width:22px;
 
-color:white;
-
-padding:18px;
-
-font-size:20px;
-
-text-align:left;
-
-border:none;
-
-cursor:pointer;
-
-margin-top:15px;
-
-transition:.3s;
+    height:22px;
 
 }
 
-.accordion:hover{
+.marquee-item span{
 
-background:#222;
+    font-size:15px;
+
+}
 
 }
 
