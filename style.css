@@ -172,6 +172,14 @@ max-width:680px;
 margin:auto;
 margin-bottom:50px;
 }
+.glass-card h1{
+    font-size:20px;
+    font-weight:400;
+    line-height:1.7;
+    color:#d8d8d8;
+    max-width:620px;
+    margin:0 auto 35px;
+}
 .video-preview{
 position:relative;
 display:flex;
@@ -377,7 +385,11 @@ section h2{
     line-height:1.25;
     margin-bottom:18px;
 }
-
+.glass-card h1{
+    font-size:16px;
+    line-height:1.6;
+    margin:0 auto 25px;
+}
 .glass-card p{
     font-size:15px;
     line-height:1.7;
