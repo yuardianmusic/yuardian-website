@@ -141,6 +141,150 @@ nav{
 
 }
 
+/*======================================
+INTRO VIDEO
+======================================*/
+
+.intro-video{
+
+    padding:120px 20px;
+
+    background:
+    linear-gradient(
+    180deg,
+    #101010,
+    #181818);
+
+}
+
+.glass-card{
+
+    max-width:950px;
+
+    margin:auto;
+
+    padding:60px;
+
+    text-align:center;
+
+    border-radius:30px;
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+}
+
+.glass-card h2{
+
+    font-size:44px;
+
+    margin-bottom:20px;
+
+}
+
+.glass-card p{
+
+    color:#cfcfcf;
+
+    max-width:700px;
+
+    margin:auto;
+
+    margin-bottom:40px;
+
+    font-size:18px;
+
+}
+
+.video-thumbnail{
+
+    display:block;
+
+    position:relative;
+
+    overflow:hidden;
+
+    border-radius:20px;
+
+}
+
+.video-thumbnail img{
+
+    width:100%;
+
+    display:block;
+
+    transition:.4s;
+
+}
+
+.video-thumbnail:hover img{
+
+    transform:scale(1.04);
+
+}
+
+.play-button{
+
+    position:absolute;
+
+    top:50%;
+
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+    width:90px;
+
+    height:90px;
+
+    border-radius:50%;
+
+    background:white;
+
+    color:black;
+
+    font-size:40px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.watch-btn{
+
+    display:inline-block;
+
+    margin-top:35px;
+
+    padding:16px 34px;
+
+    border-radius:100px;
+
+    text-decoration:none;
+
+    background:#c9a86a;
+
+    color:#111;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.watch-btn:hover{
+
+    background:white;
+
+}
+
 /* ==========================================
    SECTION
 ========================================== */
@@ -299,6 +443,38 @@ section h2{
 .lead{
 
     font-size:18px;
+
+}
+
+@media(max-width:768px){
+
+.glass-card{
+
+padding:30px 20px;
+
+}
+
+.glass-card h2{
+
+font-size:30px;
+
+}
+
+.glass-card p{
+
+font-size:16px;
+
+}
+
+.play-button{
+
+width:70px;
+
+height:70px;
+
+font-size:28px;
+
+}
 
 }
 
