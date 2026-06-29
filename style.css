@@ -350,59 +350,71 @@ background:white;
 /*=========================================
 HOME CLOSING
 =========================================*/
+
 .home-closing{
-padding:100px 20px;
-background:#0d0d0d;
-text-align:center;
+    padding:100px 20px;
+    background:
+    radial-gradient(circle at top,#2b2b2b 0%,#171717 45%,#0d0d0d 100%);
+    text-align:center;
 }
+
 .closing-content{
-max-width:760px;
-margin:auto;
+    max-width:760px;
+    margin:auto;
 }
+
 .closing-content h2{
-font-size:46px;
-line-height:1.2;
-margin-bottom:25px;
+    font-size:46px;
+    line-height:1.2;
+    margin-bottom:25px;
 }
+
 .closing-content span{
-color:#c9a86a;
+    color:#c9a86a;
 }
+
 .closing-content p{
-font-size:20px;
-line-height:1.9;
-color:#d2d2d2;
-margin-bottom:45px;
+    font-size:20px;
+    line-height:1.9;
+    color:#d2d2d2;
+    margin-bottom:45px;
 }
+
 .closing-buttons{
-display:flex;
-justify-content:center;
-gap:20px;
-flex-wrap:wrap;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
 }
+
 .btn-primary{
-background:#c9a86a;
-color:#111;
-padding:16px 34px;
-border-radius:999px;
-text-decoration:none;
-font-weight:700;
-transition:.3s;
+    background:#c9a86a;
+    color:#111;
+    padding:16px 34px;
+    border-radius:999px;
+    text-decoration:none;
+    font-weight:700;
+    transition:.3s;
 }
+
 .btn-primary:hover{
-transform:translateY(-3px);
-box-shadow:0 10px 25px rgba(201,168,106,.25);
+    transform:translateY(-3px);
+    box-shadow:0 10px 25px rgba(201,168,106,.25);
 }
-.btn-secondary
-padding:16px 34px;
-border-radius:999px;
-border:1px solid rgba(255,255,255,.2);
-color:#fff;
-text-decoration:none;
-transition:.3s;
+
+.btn-secondary{
+    padding:16px 34px;
+    border-radius:999px;
+    border:1px solid rgba(255,255,255,.2);
+    color:#fff;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
 }
+
 .btn-secondary:hover{
-border-color:#c9a86a;
-color:#c9a86a;
+    border-color:#c9a86a;
+    color:#c9a86a;
 }
 /* ==========================================
    SECTION
