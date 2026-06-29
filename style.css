@@ -590,53 +590,73 @@ font-size:28px;
 
 }
 
-@media(max-width:768px){
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width:768px){
 
 .intro-video{
 
-padding:80px 20px;
+padding:50px 18px;
 
 }
 
 .glass-card{
 
-padding:40px 25px;
+max-width:100%;
+
+padding:30px 22px;
+
+border-radius:20px;
 
 }
 
 .glass-card h2{
 
-font-size:34px;
+font-size:30px;
+
+line-height:1.25;
+
+margin-bottom:18px;
 
 }
 
 .glass-card p{
 
-font-size:16px;
+font-size:15px;
+
+line-height:1.7;
+
+margin-bottom:28px;
 
 }
 
 .video-preview{
 
-height:190px;
+height:120px;
+
+border-radius:16px;
 
 }
 
 .play-circle{
 
-width:70px;
+width:58px;
 
-height:70px;
+height:58px;
 
-font-size:28px;
+font-size:24px;
+
+margin-bottom:15px;
 
 }
 
 .preview-text{
 
-font-size:16px;
+font-size:15px;
 
-}
+font-weight:600;
 
 }
 
