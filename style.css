@@ -1,28 +1,23 @@
 /* ==========================================
    RESET
 ========================================== */
-
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
-
 /* ==========================================
    BODY
 ========================================== */
-
 body{
     font-family:Arial,sans-serif;
     background:#0d0d0d;
     color:#ffffff;
     line-height:1.7;
 }
-
 /* ==========================================
    HEADER
 ========================================== */
-
 header{
     position:sticky;
     top:0;
@@ -31,597 +26,379 @@ header{
     border-bottom:1px solid #222;
     padding:20px 60px;
 }
-
 nav{
     display:flex;
     justify-content:center;
     align-items:center;
 }
-
 .menu{
     display:flex;
     gap:35px;
 }
-
 .menu a{
     color:#fff;
     text-decoration:none;
     font-weight:bold;
     transition:.3s;
 }
-
 .menu a:hover{
     color:#c9a86a;
 }
-
 /* ==========================================
    HERO
 ========================================== */
-
 .hero{
     width:100%;
     padding:0;
     overflow:hidden;
 }
-
 .hero img{
     display:block;
     width:100%;
     height:auto;
 }
-
 /* ===============================
    MARQUEE
 =============================== */
-
 .logo-marquee{
     background:#111;
     overflow:hidden;
     padding:20px 0;
     white-space:nowrap;
 }
-
 .marquee{
     display:flex;
     width:max-content;
     animation:marquee 15s linear infinite;
 }
-
 .marquee-content{
     display:flex;
     align-items:center;
 }
-
 .marquee-item{
     display:flex;
     align-items:center;
     margin:0 20px;
 }
-
 .marquee-item img{
     width:25px;
     height:25px;
     object-fit:contain;
     display:block;
 }
-
 .marquee-item span{
     margin-left:10px;
     font-size:25px;
     font-weight:700;
     color:#fff;
 }
-
 .marquee-content span{
     font-size:25px;
     color:#ddd;
     margin:0 20px;
 }
-
 .divider{
     color:#c9a86a;
     font-size:25px;
 }
-
 /* Pause saat hover */
-
 .logo-marquee:hover .marquee{
     animation-play-state:paused;
 }
-
 @keyframes marquee{
-
     from{
         transform:translateX(0);
     }
-
     to{
         transform:translateX(-50%);
     }
-
 }
-
 /*====================================================
-
 INTRO VIDEO
-
 ====================================================*/
-
 .intro-video{
-
 position:relative;
-
 padding:70px 20px;
-
 overflow:hidden;
-
 background:url("assets/video-bg.jpg");
-
 background-size:cover;
-
 background-position:center;
-
 background-repeat:no-repeat;
-
 }
-
 .intro-video::before{
-
 content:"";
-
 position:absolute;
-
 top:0;
-
 left:0;
-
 width:100%;
-
 height:100%;
-
 background:rgba(10,10,10,.82);
-
 backdrop-filter:blur(4px);
-
 background:
 linear-gradient(
 180deg,
 rgba(8,8,8,.82),
 rgba(15,15,15,.88)
 );
-
 }
-
 .glass-card{
-
 position:relative;
-
 z-index:2;
-
 max-width:760px;
-
 margin:auto;
-
 padding:45px 40px;
-
 border-radius:30px;
-
 background:rgba(30,30,30,.60);
-
 backdrop-filter:blur(18px);
-
 border:1px solid rgba(201,168,106,.30);
-
 box-shadow:
-
 0 25px 70px rgba(0,0,0,.45);
-
 text-align:center;
-
 }
-
 .glass-card h2{
-
 font-size:40px;
-
 line-height:1.25;
-
 margin-bottom:25px;
-
 font-weight:700;
-
 }
-
 .glass-card h2 span{
-
 color:#c9a86a;
-
 }
-
 .glass-card p{
-
 font-size:19px;
-
 color:#d8d8d8;
-
 line-height:1.8;
-
 max-width:680px;
-
 margin:auto;
-
 margin-bottom:50px;
-
 }
-
 .video-preview{
-
 position:relative;
-
 display:flex;
-
 flex-direction:column;
-
 justify-content:center;
-
 align-items:center;
-
 height:150px;
-
 border-radius:22px;
-
 text-decoration:none;
-
 background:
-
 linear-gradient(
-
 135deg,
-
 rgba(201,168,106,.08),
-
 rgba(255,255,255,.02)
-
 );
-
 border:1px solid rgba(201,168,106,.25);
-
 overflow:hidden;
-
 transition:.35s;
-
 }
-
 .video-preview:hover{
-
 transform:translateY(-6px);
-
 border-color:#c9a86a;
-
 box-shadow:
-
 0 15px 40px rgba(201,168,106,.18);
-
 }
-
 .video-preview::before{
-
 content:"";
-
 position:absolute;
-
 width:180%;
-
 height:2px;
-
 background:
-
 linear-gradient(
-
 90deg,
-
 transparent,
-
 #c9a86a,
-
 transparent
-
 );
-
 animation:wave 4s linear infinite;
-
 opacity:.5;
-
 }
-
 .play-circle{
-
 width:70px;
-
 height:70px;
-
 border-radius:50%;
-
 background:#c9a86a;
-
 display:flex;
-
 justify-content:center;
-
 align-items:center;
-
 font-size:28px;
-
 color:#111;
-
 box-shadow:
-
 0 0 35px rgba(201,168,106,.45);
-
 margin-bottom:25px;
-
 transition:.3s;
-
 }
-
 .video-preview:hover .play-circle{
-
 transform:scale(1.08);
-
 }
-
 .preview-text{
-
 font-size:20px;
-
 font-weight:600;
-
 color:white;
-
 letter-spacing:.5px;
-
 }
-
 @keyframes wave{
-
 0%{
-
 transform:translateX(-60%);
-
 }
-
 100%{
-
 transform:translateX(60%);
-
 }
-
 }
 /* ==========================================
    SECTION
 ========================================== */
-
 section{
     padding:10px 60px;
 }
-
 .hero,
 .logo-marquee{
     padding-left:0;
     padding-right:0;
 }
-
 section h2{
     font-size:38px;
     margin-bottom:10px;
 }
-
 #kontak p{
     margin-bottom:10px;
 }
-
 /* ==========================================
    PANEL
 ========================================== */
-
 .panel{
     display:none;
     padding:20px;
     background:#111;
     border-left:3px solid #c9a86a;
 }
-
 .brand{
     font-size:28px;
 }
-
 .booking-btn{
     padding:12px 25px;
 }
-
 .highlight{
     font-size:24px;
     font-weight:600;
 }
-
 .lead{
     font-size:22px;
     font-weight:500;
     line-height:1.6;
 }
-
 /* ==========================================
    TABLET
 ========================================== */
-
 @media (max-width:900px){
-
 header{
-
     padding:18px;
-
 }
-
 nav{
-
     flex-direction:column;
-
 }
-
 .menu{
-
     flex-wrap:wrap;
-
     justify-content:center;
-
     gap:18px;
-
 }
-
 section{
-
     padding:10px 20px;
-
 }
-
 .hero,
 .logo-marquee{
-
     padding-left:0;
-
     padding-right:0;
-
 }
-
 }
-
 /* ==========================================
    MOBILE
 ========================================== */
 
 @media (max-width:768px){
 
-.marquee-item img{
+/* ---------- Marquee ---------- */
 
+.marquee-item img{
     width:18px;
     height:18px;
-
 }
 
 .marquee-item span{
-
     font-size:15px;
-
 }
 
 .marquee-content span{
-
     font-size:14px;
-
 }
 
 .divider{
-
     font-size:14px;
-
 }
 
-}
+/* ---------- Menu ---------- */
 
 .menu{
-
     gap:12px;
-
 }
 
 .menu a{
-
     font-size:15px;
-
 }
 
+/* ---------- Typography ---------- */
+
 section h2{
-
     font-size:28px;
-
 }
 
 .highlight{
-
     font-size:20px;
-
 }
 
 .lead{
-
     font-size:18px;
-
 }
 
-@media (max-width:768px){
+/* ---------- Intro Video ---------- */
 
 .intro-video{
-
-padding:50px 18px;
-
+    padding:50px 18px;
 }
 
 .glass-card{
-
-max-width:100%;
-
-padding:30px 22px;
-
-border-radius:20px;
-
+    width:100%;
+    max-width:100%;
+    padding:30px 22px;
+    border-radius:20px;
 }
 
 .glass-card h2{
-
-font-size:30px;
-
-line-height:1.25;
-
-margin-bottom:18px;
-
+    font-size:30px;
+    line-height:1.25;
+    margin-bottom:18px;
 }
 
 .glass-card p{
-
-font-size:15px;
-
-line-height:1.7;
-
-margin-bottom:28px;
-
+    font-size:15px;
+    line-height:1.7;
+    margin-bottom:28px;
 }
 
 .video-preview{
-
-height:120px;
-
-border-radius:16px;
-
+    height:120px;
+    border-radius:16px;
 }
 
 .play-circle{
-
-width:58px;
-
-height:58px;
-
-font-size:24px;
-
-margin-bottom:15px;
-
+    width:58px;
+    height:58px;
+    font-size:24px;
+    margin-bottom:15px;
 }
 
 .preview-text{
-
-font-size:15px;
-
-font-weight:600;
-
+    font-size:15px;
+    font-weight:600;
 }
 
 }
