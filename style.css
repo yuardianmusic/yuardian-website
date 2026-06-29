@@ -252,6 +252,77 @@ transform:translateX(-60%);
 transform:translateX(60%);
 }
 }
+/*=========================================
+ACCORDION
+=========================================*/
+.accordion-section{
+padding:90px 60px;
+background:#0d0d0d;
+}
+.accordion-title{
+text-align:center;
+font-size:40px;
+margin-bottom:55px;
+}
+.accordion{
+max-width:950px;
+margin:auto;
+}
+.accordion-item{
+border-top:1px solid rgba(255,255,255,.12);
+}
+.accordion-item:last-child{
+border-bottom:1px solid rgba(255,255,255,.12);
+}
+.accordion-header{
+width:100%;
+background:none;
+border:none;
+padding:28px 0;
+display:flex;
+justify-content:space-between;
+align-items:center;
+cursor:pointer;
+color:white;
+font-size:24px;
+font-weight:600;
+text-align:left;
+transition:.3s;
+}
+.accordion-header:hover{
+color:#c9a86a;
+}
+.icon{
+font-size:34px;
+font-weight:300;
+transition:.35s;
+}
+.accordion-content{
+max-height:0;
+overflow:hidden;
+transition:max-height .45s ease;
+}
+.accordion-content p{
+padding-bottom:25px;
+font-size:18px;
+line-height:1.9;
+color:#d2d2d2;
+max-width:780px;
+}
+.accordion-btn{
+display:inline-block;
+margin-bottom:30px;
+padding:14px 30px;
+background:#c9a86a;
+color:#111;
+text-decoration:none;
+font-weight:700;
+border-radius:100px;
+transition:.3s;
+}
+.accordion-btn:hover{
+background:white;
+}
 /* ==========================================
    SECTION
 ========================================== */
@@ -321,65 +392,48 @@ section{
 /* ==========================================
    MOBILE
 ========================================== */
-
 @media (max-width:768px){
-
 /* ---------- Marquee ---------- */
-
 .marquee-item img{
     width:18px;
     height:18px;
 }
-
 .marquee-item span{
     font-size:15px;
 }
-
 .marquee-content span{
     font-size:14px;
 }
-
 .divider{
     font-size:14px;
 }
-
 /* ---------- Menu ---------- */
-
 .menu{
     gap:12px;
 }
-
 .menu a{
     font-size:15px;
 }
-
 /* ---------- Typography ---------- */
-
 section h2{
     font-size:28px;
 }
-
 .highlight{
     font-size:20px;
 }
-
 .lead{
     font-size:18px;
 }
-
 /* ---------- Intro Video ---------- */
-
 .intro-video{
     padding:50px 18px;
 }
-
 .glass-card{
     width:100%;
     max-width:100%;
     padding:30px 22px;
     border-radius:20px;
 }
-
 .glass-card h2{
     font-size:30px;
     line-height:1.25;
@@ -395,22 +449,42 @@ section h2{
     line-height:1.7;
     margin-bottom:28px;
 }
-
 .video-preview{
     height:120px;
     border-radius:16px;
 }
-
 .play-circle{
     width:58px;
     height:58px;
     font-size:24px;
     margin-bottom:15px;
 }
-
 .preview-text{
     font-size:15px;
     font-weight:600;
 }
-
+}
+/* ---------- Accordion ---------- */
+.accordion-section{
+padding:60px 20px;
+}
+.accordion-title{
+font-size:30px;
+margin-bottom:35px;
+}
+.accordion-header{
+font-size:18px;
+padding:22px 0;
+}
+.icon{
+font-size:28px;
+}
+.accordion-content p{
+font-size:15px;
+line-height:1.8;
+}
+.accordion-btn{
+width:100%;
+text-align:center;
+padding:14px;
 }
