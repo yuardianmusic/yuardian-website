@@ -463,7 +463,6 @@ section h2{
     font-size:15px;
     font-weight:600;
 }
-}
 /* ---------- Accordion ---------- */
 .accordion-section{
 padding:60px 20px;
@@ -487,4 +486,5 @@ line-height:1.8;
 width:100%;
 text-align:center;
 padding:14px;
+}
 }
