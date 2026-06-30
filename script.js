@@ -62,48 +62,49 @@ accordionItems.forEach(item=>{
             icon.textContent = "−";
 
         }
-       
-/*=========================================
-FAQ
-=========================================*/
+
+    });
+
+});
+
+
+/* ==========================================
+   FAQ
+========================================== */
 
 const faqItems = document.querySelectorAll(".faq-item");
 
 faqItems.forEach(item=>{
 
-const question = item.querySelector(".faq-question");
+    const question = item.querySelector(".faq-question");
 
-const answer = item.querySelector(".faq-answer");
+    const answer = item.querySelector(".faq-answer");
 
-const icon = item.querySelector(".faq-icon");
+    const icon = item.querySelector(".faq-icon");
 
-question.addEventListener("click",()=>{
+    question.addEventListener("click",()=>{
 
-const open = item.classList.contains("active");
+        const isOpen = item.classList.contains("active");
 
-faqItems.forEach(i=>{
+        faqItems.forEach(i=>{
 
-i.classList.remove("active");
+            i.classList.remove("active");
 
-i.querySelector(".faq-answer").style.maxHeight=null;
+            i.querySelector(".faq-answer").style.maxHeight = null;
 
-i.querySelector(".faq-icon").textContent="+";
+            i.querySelector(".faq-icon").textContent = "+";
 
-});
+        });
 
-if(!open){
+        if(!isOpen){
 
-item.classList.add("active");
+            item.classList.add("active");
 
-answer.style.maxHeight=answer.scrollHeight+"px";
+            answer.style.maxHeight = answer.scrollHeight + "px";
 
-icon.textContent="−";
+            icon.textContent = "−";
 
-}
-
-});
-
-});
+        }
 
     });
 
