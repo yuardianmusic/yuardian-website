@@ -62,6 +62,48 @@ accordionItems.forEach(item=>{
             icon.textContent = "−";
 
         }
+       
+/*=========================================
+FAQ
+=========================================*/
+
+const faqItems = document.querySelectorAll(".faq-item");
+
+faqItems.forEach(item=>{
+
+const question = item.querySelector(".faq-question");
+
+const answer = item.querySelector(".faq-answer");
+
+const icon = item.querySelector(".faq-icon");
+
+question.addEventListener("click",()=>{
+
+const open = item.classList.contains("active");
+
+faqItems.forEach(i=>{
+
+i.classList.remove("active");
+
+i.querySelector(".faq-answer").style.maxHeight=null;
+
+i.querySelector(".faq-icon").textContent="+";
+
+});
+
+if(!open){
+
+item.classList.add("active");
+
+answer.style.maxHeight=answer.scrollHeight+"px";
+
+icon.textContent="−";
+
+}
+
+});
+
+});
 
     });
 
