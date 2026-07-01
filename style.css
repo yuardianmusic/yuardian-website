@@ -1024,8 +1024,27 @@ margin-bottom:4px;
 font-size:11px;
 margin-bottom:8px;
 }
-.portfolio-info a{
-font-size:11px;
+.project-link{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    padding:0;
+    background:none;
+    border:none;
+    cursor:pointer;
+    color:var(--text-primary);
+    font-size:.95rem;
+    font-weight:600;
+    transition:.3s;
+}
+.project-link span{
+    transition:.3s;
+}
+.project-link:hover{
+    opacity:.75;
+}
+.project-link:hover span{
+    transform:translateX(6px);
 }
 .portfolio-footer{
 margin-top:25px;
