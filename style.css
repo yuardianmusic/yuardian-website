@@ -1009,6 +1009,18 @@ gap:10px;
 }
 .portfolio-card{
 border-radius:12px;
+cursor:pointer;
+transition:.35s;
+}
+.portfolio-card:hover{
+    transform:translateY(-8px);
+}
+.portfolio-card:hover .portfolio-thumbnail img{
+    transform:scale(1.05);
+}  
+.portfolio-card:hover .card-arrow{
+    opacity:1;
+    transform:translateY(0);
 }
 .portfolio-card img{
 aspect-ratio:1/1;
@@ -1049,6 +1061,15 @@ margin-bottom:8px;
 .portfolio-footer{
 margin-top:25px;
 }
+.card-arrow{
+    position:absolute;
+    top:18px;
+    right:18px;
+    opacity:0;
+    transform:translateY(8px);
+    transition:.3s;
+}
+   
 }
 @media(max-width:768px){
 .faq-section{
